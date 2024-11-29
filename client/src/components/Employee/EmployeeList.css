@@ -1,0 +1,154 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container */
+div {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #4a4a4a;
+}
+
+/* Search bar styling */
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+td img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Buttons */
+button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 6px 12px;
+    /* background-color: #f0f0f0; */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #e2e6ea;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+    
+    td img {
+        width: 30px;
+        height: 30px;
+    }
+
+    button, a {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    th {
+        background-color: transparent;
+        color: #333;
+    }
+
+    td {
+        border-bottom: none;
+        padding: 10px 0;
+        text-align: right;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td img {
+        width: 40px;
+        height: 40px;
+    }
+
+    button, a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
